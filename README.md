@@ -42,8 +42,12 @@ I made a `setup.sh` file that *downloads* `table.txt` and `asns.csv` from bgp.to
 
 `grepaddr` install requires `git`and `python`
 
+3. `chmod +x asn2nriched.sh`
+
 ## Usage
 Giveth string query and ye shall be blessed with enriched ip addresses
+
+`./asn2nriched.sh Saskpower`
 
 ## TODO
 - add manual regex for cidr4 and ipv4 to make grepaddr optional
