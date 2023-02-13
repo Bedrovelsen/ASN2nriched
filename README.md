@@ -31,39 +31,6 @@ $ brew tap shodan-public/homebrew-nrich https://gitlab.com/shodan-public/homebre
 $ brew install nrich
 ```
 
-2. Get pre-requirments by following Automated or Manual instructions below.```
-
-    |      .|'''.|  '|.   '|'                        ||          '||                   '||  
-   |||     ||..  '   |'|   |   /\  .. ...   ... ..  ...    ....   || ..     ....     .. ||  
-  |  ||     ''|||.   | '|. |  (  )  ||  ||   ||' ''  ||  .|   ''  ||' ||  .|...||  .'  '||  
- .''''|.  .     '||  |   |||    //  ||  ||   ||      ||  ||       ||  ||  ||       |.   ||  
-.|.  .||. |'....|'  .|.   '|   //  .||. ||. .||.    .||.  '|...' .||. ||.  '|...'  '|..'||. 
-                              /(                                                            
-                              {___                                                          
-
-```
-
-> Type an organization name or AS name text query get netblocks of nriched IP address json out
-
----
-
-## setup
-
-1. Install `nrich`
-
-Grab the [latest release](https://gitlab.com/shodan-public/nrich/-/releases) for your operating system. For example, to install the ``nrich`` command in Ubuntu:
-
-```shell
-$ wget https://gitlab.com/api/v4/projects/33695681/packages/generic/nrich/latest/nrich_latest_amd64.deb
-$ sudo dpkg -i nrich_latest_amd64.deb
-```
-
-For MacOS, install from tap repository with **homebrew**
-```shell
-$ brew tap shodan-public/homebrew-nrich https://gitlab.com/shodan-public/homebrew-nrich
-$ brew install nrich
-```
-
 2. Get pre-requirments by following Automated or Manual instructions below.
  
 **Automated:** run `sh setup.sh`
@@ -88,7 +55,7 @@ Giveth string query and ye shall be blessed with enriched ip addresses
 
 `./asn2nriched.sh Saskpower`
 
-If not wanting automatic nrich'ing you can get the CIDRs on their own using
+Only want non nrich'ed CIDR blocks to do your own thing with?
 
 `./getcidrz.sh Saskpower`
 
